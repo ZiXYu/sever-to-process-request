@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>TestTomcat</display-name>
+  
+  <servlet>
+      <servlet-name>SetupMysql</servlet-name>
+      <servlet-class>servlet.SetupMysql</servlet-class>
+   </servlet>
+   
+   <servlet-mapping>
+      <servlet-name>SetupMysql</servlet-name>
+      <url-pattern>/setup</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+      <servlet-name>UpdateNum</servlet-name>
+      <servlet-class>servlet.UpdateNum</servlet-class>
+   </servlet>
+   
+   <servlet-mapping>
+      <servlet-name>UpdateNum</servlet-name>
+      <url-pattern>/updatenum</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+      <servlet-name>Update</servlet-name>
+      <servlet-class>servlet.Update</servlet-class>
+   </servlet>
+   
+   <servlet-mapping>
+      <servlet-name>Update</servlet-name>
+      <url-pattern>/update</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+      <servlet-name>Process</servlet-name>
+      <servlet-class>servlet.Process</servlet-class>
+   </servlet>
+   
+   <servlet-mapping>
+      <servlet-name>Process</servlet-name>
+      <url-pattern>/process</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+      <servlet-name>Notification</servlet-name>
+      <servlet-class>servlet.Notification</servlet-class>
+   </servlet>
+   
+   <servlet-mapping>
+      <servlet-name>Notification</servlet-name>
+      <url-pattern>/notification</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+      <servlet-name>Change</servlet-name>
+      <servlet-class>servlet.Change</servlet-class>
+   </servlet>
+   
+   <servlet-mapping>
+      <servlet-name>Change</servlet-name>
+      <url-pattern>/change</url-pattern>
+   </servlet-mapping>
+  
+  <welcome-file-list>
+  	<welcome-file>homepage.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
